@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rastreo</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+   <header class="header">
+    <div class="header-left">Gestor de Tickets</div>
+    <a href="index.html">
+      <div class="header-icons">
+        ⟳ ⎋ 👤
+      </div>
+    </a>
+  </header>
+
+  <div class="contenedor">
+    <aside class="sidebar">
+      <p>Selecciona una opción</p>
+      <a href="formatoCreacion.html">
+        <button class="btn-inactivo">Nuevo Ticket</button>
+      </a>
+      <a href="inicio.html">
+       <button class="btn-activo">Busca tu ticket</button>
+      </a>
+    </aside>
+
+    <main class="contenido">
+      <h2>Seguimiento de tus tickets</h2>
+      <div class="form-container">
+        <form>
+          <label for="codigo">Ingresa el código del ticket que vas a buscar</label>
+          <input type="text" id="codigo" placeholder="15246398AAA" />
+          <button type="submit" class="btn-buscar">Buscar</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>©2025 Gestor de Tickets</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Ticket - Gestor de Tickets</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">Gestor de Tickets</div>
+    <a href="index.html">
+      <div class="header-icons">
+        ⟳ ⎋ 👤
+      </div>
+    </a>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <p>Selecciona una opción</p>
+      <a href="formatoCreacion.html">
+        <button class="btn-activo">Nuevo Ticket</button>
+      </a>
+      <a href="inicio.html">
+        <button class="btn-inactivo">Busca tu ticket</button>
+      </a>
+    </aside>
+
+    <section class="contenido">
+      <h2>Crea un ticket</h2>
+
+      <div class="formulario-ticket">
+        <form>
+          <div class="fila">
+            <input type="text" placeholder="Usuario">
+            <input type="text" placeholder="Asunto">
+          </div>
+
+          <textarea placeholder="Descripción"></textarea>
+
+          <div class="fila">
+            <select>
+              <option>Estado</option>
+              <option>Abierto</option>
+              <option>En progreso</option>
+              <option>Finalizado</option>
+            </select>
+            <input type="text" placeholder="Número de placa">
+          </div>
+
+          <input type="text" placeholder="Novedad">
+
+          <button type="submit" class="btn-crear">Hecho</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>2025 Gestor de Tickets</p>
+  </footer>
+
+</body>
+</html>

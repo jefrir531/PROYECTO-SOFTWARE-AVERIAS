@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aprobación de Averías</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">Gestor de Tickets</div>
+    <a href="index.html">
+      <div class="header-icons">
+
+        ⟳ ⎋ 👤
+      </div>
+    </a>
+  </header>
+
+  <div class="contenedor">
+    <aside class="sidebar">
+      <button class="btn-activo">Aprobación de averías</button>
+    </aside>
+
+    <main class="contenido">
+      <h2>Aprueba tus Averías</h2>
+      <div class="acciones">
+        <button class="btn-nuevo">Nuevo Ticket</button>
+        <div class="busqueda">
+          <input type="text" placeholder="Buscar por código">
+          <button><img src="icono-buscar.png" alt="Buscar"></button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="listado">
+          <h3>Listado de Tickets</h3>
+          <ul>
+            <li class="ticket-activo">
+              1651516551AAA <span class="icono-ojo">👁️</span>
+            </li>
+            <li>1651516551AAA <span class="icono-ojo">👁️</span></li>
+            <li>1651516551AAA <span class="icono-ojo">👁️</span></li>
+            <li>1651516551AAA <span class="icono-ojo">👁️</span></li>
+            <li>1651516551AAA <span class="icono-ojo">👁️</span></li>
+            <li>1651516551AAA <span class="icono-ojo">👁️</span></li>
+          </ul>
+        </div>
+
+        <div class="detalle">
+          <h3>Ticket <span class="codigo-destacado">#1651516551AAA</span></h3>
+          <table>
+            <tr><td><strong>Código</strong></td><td>1651516551AAA</td></tr>
+            <tr><td><strong>Asunto</strong></td><td>Ram 32 gb<br>Tarjeta de video rx6600<br>Mother asus x v1.5</td></tr>
+            <tr><td><strong>Solicitante</strong></td><td>Julio Fernandez Ribas Monte</td></tr>
+            <tr><td><strong>Costo</strong></td><td class="costo">200 usd</td></tr>
+            <tr><td><strong>Estado</strong></td><td class="activo">ACTIVA</td></tr>
+            <tr><td><strong>Responsable</strong></td><td>Benito de dios</td></tr>
+            <tr><td><strong>Fecha</strong></td><td>13-05-2024</td></tr>
+          </table>
+          <div class="acciones-detalle">
+            <a href="inicio.html">
+              <button class="btn-aprobar">Aprobar</button>
+            </a>  
+            <a href="inicio.html">
+              <button class="btn-denegar">Denegar</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    ©2025 Gestor de Tickets
+  </footer>
+</body>
+</html>

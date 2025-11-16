@@ -1,0 +1,6 @@
+
+            asunto:reparacion kimi,
+            codigo:1111,
+            solicitante:mariangel,
+            descripcion:amor,
+            fecha:10/11/2025 ;  

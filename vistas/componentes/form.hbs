@@ -1,0 +1,21 @@
+{{#if averia}}
+    <form action="/editar/{{averia._id}}" method="POST">
+        <input value="{{averia.asunto}}" type="text" name="asunto" placeholder="asunto" class="asunto" >
+        <input value="{{averia.codigo}}" type="text" name="codigo" placeholder="codigo" class="codigo" >
+        <input value="{{averia.solicitante}}" type="text" name="solicitante" placeholder="solicitante" class="solicitante" >
+        <input value="{{averia.descripcion}}" type="text" name="descripcion" placeholder="descripcion" class="descripcion" >
+        <input value="{{averia.fecha}}" type="text" name="fecha" placeholder="fecha" class="fecha" >
+        <button type="submit">Enviar</button>
+    </form>
+
+
+{{else}}
+    <form action="/" method="POST">
+        <input type="text" name="asunto" placeholder="asunto" class="asunto" >
+        <input type="text" name="codigo" placeholder="codigo" class="codigo" >
+        <input type="text" name="solicitante" placeholder="solicitante" class="solicitante" >
+        <input type="text" name="descripcion" placeholder="descripcion" class="descripcion" >
+        <input type="text" name="fecha" placeholder="fecha" class="fecha" >
+        <button type="submit">Enviar</button>
+    </form>
+{{/if}}

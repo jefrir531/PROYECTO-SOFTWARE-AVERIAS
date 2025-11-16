@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado del Equipo - Gestor de Tickets</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">Gestor de tickets</div>
+    <div class="header-right">
+      <span style="margin-right: 10px;">☰</span>
+      <a href="index.html">
+        <span>👤</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="estado-container">
+    <section class="estado-info">
+      <div class="estado-texto">
+        <h2>Sigue el estado de tu equipo en tiempo real</h2>
+        <p><strong>Desde el diagnóstico hasta la solución, todo en un solo lugar</strong></p>
+
+        <div class="buscador">
+          🔍 <input type="text" placeholder="Buscar número de ticket">
+        </div>
+      </div>
+
+      <div class="estado-imagen">
+        
+        <img src="imagenes/tickets1.png" alt="Imagen del técnico revisando equipo" style="width:80%; border-radius:10px;">
+      </div>
+    </section>
+
+    <h3>¿Qué más puedes hacer?</h3>
+
+    <section class="acciones">
+      <div class="accion">
+        <a href="formatoCreacion.html">
+          <div class="icono">🖥️</div>
+        </a>  
+        <p>Registro de ticket</p>
+      </div>
+      <div class="accion">
+        <a href="Rastreo.html">
+          <div class="icono">🛠️</div>
+        </a>
+        <p>Rastreo técnico</p>
+      </div>
+      <div class="accion">
+        <a href="estado.html">
+          <div class="icono">⬇️</div>
+        </a>
+        <p>Aprobación del usuario</p>
+      </div>
+      <div class="accion">
+        <a href="http://localhost:5000/">
+        <div class="icono">🔧</div>
+        </a>
+        <p>Reparación y pago</p>
+      </div>
+    </section>
+
+    <section class="resumen">
+      <h4>Resumen del caso</h4>
+      <p>
+        Caso #1234<br>
+        Estado: Diagnóstico completado<br>
+        Diagnóstico: Falla en la placa madre<br>
+        Costo estimado: $200 USD
+      </p>
+      <div class="botones-resumen">
+        <a href="estado.html">
+         <button class="btn-aceptar">Aceptar reparación</button>
+        </a> 
+        <a href="index.html">
+        <button class="btn-rechazar">Rechazar</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Gestor de Tickets</p>
+  </footer>
+
+</body>
+</html>

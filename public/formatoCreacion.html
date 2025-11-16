@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formato creacion tickets</title>
+  
+  <link rel="stylesheet" href="estilos/styles.css" />
+</head>
+<body>
+   <header>
+    <div class="header-left">Gestor de tickets</div>
+    <div class="header-right">
+      <span style="margin-right: 10px;">☰</span>
+      <a href="index.html">
+        <span>👤</span>
+    </div>
+    </a>
+  </header>
+
+  <div class="contenedor">
+    <aside>
+      <h3>Selecciona una opción</h3>
+        <a href="formatoCreacion.html">
+         <button class="btn-lateral activo">Nuevo Ticket</button>
+      </a>
+      <a href="inicio.html">
+       <button class="btn-lateral">Busca tu ticket</button>
+      </a>
+    </aside>
+
+    <main>
+      <h2>Formato creación de ticket</h2>
+      <form>
+        <div class="fila">
+          <input type="text" placeholder="Usuario" />
+          <input type="text" placeholder="Asunto" />
+        </div>
+        <textarea placeholder="Descripción"></textarea>
+        <div class="fila">
+          <input type="text" placeholder="Número de placa" />
+          <select>
+            <option disabled selected>Seleccione...</option>
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Novedad" />
+        <div class="botondecrear">
+          <a href="tickets.html" class="boton">Crear</a>
+        </div>
+       <!-- <a href="tickets.html">
+           <button class="btn-crear" >Crear</button>  
+        </a>-->
+      </form>
+    </main>
+  </div>
+
+  
+
+  <footer>
+    <p>2025 Gestor de Tickets</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+
+            asunto:prueba,
+            codigo:6733,
+            solicitante:jeff,
+            descripcion:falla al abrir,
+            fecha:09/11/2025 ;  

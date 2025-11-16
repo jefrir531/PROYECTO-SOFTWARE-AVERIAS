@@ -1,0 +1,12 @@
+<article class="card">
+    <div class="card-body">
+        <p>{{item.asunto}}</p>
+        <p>{{item.codigo}}</p>
+        <p>{{item.solicitante}}</p>
+        <p>{{item.descripcion}}</p>
+        <p>{{item.fecha}}</p>
+        <a href="/eliminar/{{item._id}}" class="btn btn-danger">Eliminar</a>
+        <a href="/editar/{{item._id}}" class="btn btn-warning">Editar</a>
+        <a href="/descargar/{{item._id}}" class="btn btn-info">Descargar</a>
+    </div>
+</article>
