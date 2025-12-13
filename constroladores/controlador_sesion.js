@@ -41,7 +41,7 @@ const registroUsuario=async(req,res)=>{
             to: usuario.correo,
             subject: "verifique cuenta de correo",
             // html: `<a href="http://localhost:5000/sesion/confirmarCuenta/${usuario.tokenConfirm}">verificar cuenta aquí</a>`,
-            html: `<a href="${process.env.PATHHEROKU || 'http://localhost:5000'}/sesion/confirmarCuenta/${usuario.tokenConfirm}">verificar cuenta aquí</a>`,
+            html: `<a href="${process.env.PATHHEROKU || 'http://localhost:5000'}sesion/confirmarCuenta/${usuario.tokenConfirm}">verificar cuenta aquí</a>`,
         });
 
 
