@@ -29,6 +29,12 @@ const averiaSchema=new Schema({
         required:true
     },
 
+    usuario:{
+        type:Schema.Types.ObjectId,
+        ref:"usuariosBD",
+        required:true
+    }
+
 })
 
 const AveriaBD=mongoose.model("AveriaBd",averiaSchema)

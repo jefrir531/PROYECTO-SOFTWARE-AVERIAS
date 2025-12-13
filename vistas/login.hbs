@@ -1,1 +1,23 @@
-<h1>login</h1>
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-body-tertiary">
+    <div class="card bg-light shadow p-4 rounded" style="max-width: 420px; width: 100%;">
+
+        <div class="text-center mb-3">
+            <i class="bi bi-person-circle" style="font-size: 80px; color: #6c757d;"></i>
+        </div>
+
+        <h2 class="text-center mb-4">Ingreso de usuarios</h2>
+
+        <form action="/sesion/login" method="post" class="d-flex flex-column gap-3">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+        
+            <input type="text" class="form-control mb-3" name="correo" placeholder="Ingrese el correo" value="jeff@prueba.com">
+            <input type="password"  class="form-control mb-3" name="password" placeholder="Ingrese contraseña  " value="123456">
+            
+            <button type="submit" class="btn btn-primary w-100 mb-3">Acceder</button>
+
+            <p class="text-center mt-3"> ¿No tiene usuario? <a href="/sesion/registro" class="fw-bold">Registrese aquí</a></p>
+
+        </form>
+
+    </div>
+</div>

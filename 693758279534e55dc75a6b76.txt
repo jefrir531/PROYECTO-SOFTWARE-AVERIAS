@@ -1,0 +1,6 @@
+
+            asunto:material empaque,
+            codigo:123,
+            solicitante:alfredo,
+            descripcion:urgente,
+            fecha:09/11/2025 ;  

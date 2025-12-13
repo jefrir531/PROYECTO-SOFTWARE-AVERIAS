@@ -1,21 +1,102 @@
+
+
 {{#if averia}}
-    <form action="/editar/{{averia._id}}" method="POST">
-        <input value="{{averia.asunto}}" type="text" name="asunto" placeholder="asunto" class="asunto" >
-        <input value="{{averia.codigo}}" type="text" name="codigo" placeholder="codigo" class="codigo" >
-        <input value="{{averia.solicitante}}" type="text" name="solicitante" placeholder="solicitante" class="solicitante" >
-        <input value="{{averia.descripcion}}" type="text" name="descripcion" placeholder="descripcion" class="descripcion" >
-        <input value="{{averia.fecha}}" type="text" name="fecha" placeholder="fecha" class="fecha" >
-        <button type="submit">Enviar</button>
-    </form>
+        <div class="container my-5">
+            <div class="mx-auto p-4 shadow rounded-4" style="max-width: 900px; background: white;">
+                <h2 class="text-center mb-5 pt-2 fw-bold">Edición de ticket</h2>
+                <form action="/editar/{{averia._id}}" method="POST" class="row g-4">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Asunto</label>
+                            <input value="{{averia.asunto}}" type="text" name="asunto" placeholder="asunto" class="form-control rounded-pill py-2" >
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Código</label>
+                            <input value="{{averia.codigo}}" type="text" name="codigo" placeholder="codigo" class="form-control rounded-pill py-2" >
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Usuario</label>
+                            <input value="{{averia.solicitante}}" type="text" name="solicitante" placeholder="solicitante" class="form-control rounded-pill py-2" >
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Fecha</label>
+                            <input value="{{averia.fecha}}" type="text" name="fecha" placeholder="fecha" class="form-control rounded-pill py-2" >
+                        </div>
+                    </div>    
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Descripción</label>
+                        <textarea name="descripcion" placeholder="descripcion" rows="3" class="form-control rounded" >{{averia.descripcion}}</textarea>
+                    </div>
+
+                    <div class="text-center mt-4"></div>
+                        <button type="submit" class="btn px-5 py-2 fw-bold text-white rounded-pill"style="background-color:#19d3da;">Enviar</button>
+                    </div>
+
+                </form>
+        </div>
+    </div>        
 
 
 {{else}}
-    <form action="/" method="POST">
-        <input type="text" name="asunto" placeholder="asunto" class="asunto" >
-        <input type="text" name="codigo" placeholder="codigo" class="codigo" >
-        <input type="text" name="solicitante" placeholder="solicitante" class="solicitante" >
-        <input type="text" name="descripcion" placeholder="descripcion" class="descripcion" >
-        <input type="text" name="fecha" placeholder="fecha" class="fecha" >
-        <button type="submit">Enviar</button>
-    </form>
+    <div class="container my-5">
+        <div class="mx-auto p-4 shadow rounded-4" style="max-width: 900px; background: white;">
+            <h2 class="text-center mb-5 pt-2 fw-bold">Creación de ticket</h2>
+            <form action="/" method="POST" class="row g-4">
+
+                <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Asunto</label>
+                                <input value="{{averia.asunto}}" type="text" name="asunto" placeholder="asunto" class="form-control rounded-pill py-2" >
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Código</label>
+                                <input value="{{averia.codigo}}" type="text" name="codigo" placeholder="codigo" class="form-control rounded-pill py-2" >
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Usuario</label>
+                                <input value="{{averia.solicitante}}" type="text" name="solicitante" placeholder="solicitante" class="form-control rounded-pill py-2" >
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Fecha</label>
+                                <input value="{{averia.fecha}}" type="text" name="fecha" placeholder="fecha" class="form-control rounded-pill py-2" >
+                            </div>
+                        </div>    
+
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Descripción</label>
+                            <textarea name="descripcion" placeholder="descripcion" rows="3" class="form-control rounded" >{{averia.descripcion}}</textarea>
+                        </div>
+
+                        <div class="text-center mt-4"></div>
+                            <button type="submit" class="btn px-5 py-2 fw-bold text-white rounded-pill"style="background-color:#19d3da;">Enviar</button>
+                        </div>
+                {{!-- <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+                <input type="text" name="asunto" placeholder="asunto" class="asunto" >
+                <input type="text" name="codigo" placeholder="codigo" class="codigo" >
+                <input type="text" name="solicitante" placeholder="solicitante" class="solicitante" >
+                <input type="text" name="descripcion" placeholder="descripcion" class="descripcion" >
+                <input type="text" name="fecha" placeholder="fecha" class="fecha" >
+                <button type="submit">Enviar</button> --}}
+            </form>
+        </div>  
+    </div>      
 {{/if}}

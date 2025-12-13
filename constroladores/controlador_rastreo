@@ -1,0 +1,35 @@
+const AveriaBD =require("../modelos/AveriaBD")
+
+module.exports.buscarAveria = async (req, res) => {
+    try {
+        const codigoBuscado = req.body.codigo; 
+
+        if (!codigoBuscado) {
+            req.flash("mensajes", [{ msg: "Debes ingresar un código." }]);
+            return res.redirect("/rastreo");
+        }
+
+        // Buscar la avería por código 
+        const averia = await AveriaBD.findOne({
+            codigo: codigoBuscado,
+            usuario: req.user.id
+        }).lean();
+
+        if (!averia) {
+            req.flash("mensajes", [{ msg: "No se encontró una avería con ese código." }]);
+            return res.redirect("/rastreo");
+        }
+        return res.render("home", {
+            lista_tickets: [averia],  // vista espera array
+            usuario: req.user
+        });
+
+    } catch (error) {
+        req.flash("mensajes", [{ msg: error.message }]);
+        return res.redirect("/rastreo");
+    }
+};
+
+module.exports.rastreo=(req,res)=>{
+    res.render("rastreo")
+}

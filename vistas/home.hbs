@@ -1,8 +1,54 @@
-<a href="/formato_creaAveria">Agregar averia</a>
+{{!-- 
+        <a href="/formato_creaAveria" class="btn btn-primary px-4 py-2 rounded-pill">Agregar averia</a>
+   
+
+        {{#each lista_tickets}}
+            {{>info_tickets item=this}}
+
+        {{/each}}
+
+        -------------------------------------
+    --}}
+
+<div class="container py-5">
+    <h2 class="text-center ms-5 mb-3 pt-2 fw-bold">Historial de averías</h2>
+    <div class="row g-4">
+
+        
+        <div class="col-md-4">
+
+            <a href="/formato_creaAveria" class="btn btn-primary w-100 mb-3">
+                Agregar Avería
+            </a>
+
+            <div class="list-group">
+                {{#each lista_tickets}}
+                <a
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse"
+                    href="#ticket{{@index}}"
+                >
+                    <span class="fw-bold">{{this.codigo}}</span>
+                    <i class="bi bi-eye"></i>
+                </a>
+                {{/each}}
+            </div>
+
+        </div>
+
+        
+        <div class="col-md-8">
+
+            {{#each lista_tickets}}
+            <div id="ticket{{@index}}" class="collapse">
+                {{> info_tickets item=this}}
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+</div>
 
 
-{{#each lista_tickets}}
-    {{>info_tickets item=this}}
-
-{{/each}}
 

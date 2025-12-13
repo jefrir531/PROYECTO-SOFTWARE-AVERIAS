@@ -1,0 +1,90 @@
+<main class="container py-5">
+
+    <section class="row align-items-center mb-5">
+        <div class="col-md-7">
+            <h2 class="fw-bold display-6">Sigue el estado de tu equipo en tiempo real</h2>
+            <p class="lead fw-semibold"><strong>Desde el diagnóstico hasta la solución, todo en un solo lugar</strong></p>
+
+            <div class="input-group mt-4"> {{!buscador}}
+                 <span class="input-group-text bg-white">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="text" class="form-control"  placeholder="Buscar número de ticket">
+            </div>
+        </div>
+
+        <div class="col-md-5 text-center">
+            <img src="/imagenes/tickets1.png" class="img-fluid rounded-4 shadow"  alt="Imagen del técnico revisando equipo" style="width:80%">
+        </div>
+    </section>
+
+    <h3 class="fw-bold mb-4">Acciones rápidas</h3>
+
+    <section class="row text-center mb-5 justify-content-center">
+
+        <div class="col-6 col-md-4 mb-4">
+            <a href="/formato_creaAveria" class="text-decoration-none text-dark">
+            <div class="p-3">
+                <i class="bi bi-display fs-1"></i>
+                <p class="fw-semibold mt-2">Registro de ticket</p>
+            </div>
+                {{!-- <div class="icono">🖥️</div> --}}
+            </a>
+        </div>
+
+        <div class="col-6 col-md-4 mb-4">
+            <a href="/rastreo" class="text-decoration-none text-dark">
+                {{!-- <div class="icono">🛠️</div> --}}
+                    <div class="p-3">
+                        <i class="bi bi-tools fs-1"></i>
+                        <p class="fw-semibold mt-2">Rastreo técnico</p>
+                    </div>    
+            </a>
+        </div>
+
+        <div class="col-6 col-md-4 mb-4">
+            <a href="/" class="text-decoration-none text-dark">
+                {{!-- <div class="icono">⬇️</div> --}}
+                <div class="p-3">
+                    <i class="bi bi-box-arrow-in-down fs-1"></i>
+                    <p class="fw-semibold mt-2">Historial de averías</p>
+                </div>
+            </a>
+        </div>
+
+        {{!-- <div class="col-6 col-md-3 mb-4">
+            <a href="/reparacion" class="text-decoration-none text-dark">
+                <div class="icono">🔧</div> 
+                <div class="p-3">
+                    <i class="bi bi-wrench-adjustable fs-1"></i>
+                    <p class="fw-semibold mt-2">Reparación y pago</p>
+                </div>
+            </a>
+        </div> --}}
+
+    </section>
+
+    <section class="card shadow-sm border-0 rounded-4 p-4">
+
+    <h4 class="fw-bold text-center mb-3">¡Recuerda revisar tus averías!</h4>
+
+    <p class="text-center mb-2">
+        Mantente al día con el estado de tus equipos para aprobar o rechazar
+        las reparaciones a tiempo.
+    </p>
+
+    <p class="text-center mb-4">
+        Puedes consultar el avance del diagnóstico, verificar costos estimados
+        y autorizar los trabajos necesarios.
+    </p>
+
+    <div class="text-center">
+        <a href="/" class="btn btn-primary px-5 py-3 fs-5">
+            Ver mis averías
+        </a>
+    </div>
+
+</section>
+
+        
+</main>

@@ -1,0 +1,6 @@
+
+            asunto:material empaque,
+            codigo:44444,
+            solicitante:mari,
+            descripcion:el operario reporto fallas en su uso,
+            fecha:09/11/2025 ;  

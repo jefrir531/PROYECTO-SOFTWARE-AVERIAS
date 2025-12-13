@@ -1,0 +1,15 @@
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 90vh; background-color: #f5f6ff;">
+    <div class="text-center w-100">
+        <h2 class="fw-bold mb-5" style="color:#333;">Seguimiento de tus tickets</h2>
+        <div class="card mx-auto shadow" style="max-width: 450px; border-radius: 20px; background-color: #f4f3ff;">
+            <div class="card-body p-4">
+                <form action="/rastreo" method="POST" class="text-center">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}"/>
+                    <label class="fw-semibold mb-2" style="color:#333;">Ingresa el código del ticket que vas a buscar</label>
+                    <input type="text" name="codigo" class="form-control text-center rounded-pill mb-3 py-2" placeholder="15246398AAA">
+                    <button type="submit" class="btn w-50 rounded-pill text-white"style="background-color: #00c4d1;">Buscar</button>
+                </form>
+            </div>
+        </div>    
+    </div>
+</div>

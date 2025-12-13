@@ -1,9 +1,29 @@
-<nav class="nav">
-  <h1 class="nav-title">Gestor de Tickets</h1>
+<nav class="navbar px-4" style="background-color: #19d3da;">
+  <h1 class="navbar-brand mb-0 h1 text-dark fw-bold">Gestor de Tickets</h1>
 
-  <div class="nav-links">
-    <a href="sesion/login" class="nav-link">Ingresar</a>
-    <a href="sesion/registro" class="nav-link">Crear usuario</a>
-    <a href="sesion/logout" class="nav-link">Salir</a>
+  {{#unless ocultarMenu}}
+  <div class="dropdown">
+    <button class="btn btn-outline-dark dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          {{#if imagenPerfil}}
+            <img src="/imagenes/perfiles/{{imagenPerfil}}" class="rounded-circle img-thumbnail p-0"style="width: 35px; height: 35px; object-fit: cover;"alt="perfil">
+          {{else}}
+            <img src="/imagenes/perfiles/perfil1.jpg " class="rounded-circle img-thumbnail p-0"style="width: 35px; height: 35px; object-fit: cover;"alt="default">
+      {{/if}}
+    {{!-- <i class="bi bi-person-circle"></i> --}}
+    </button>
+
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a href="/perfil" class="dropdown-item">Perfil</a></li>
+      {{!-- <li><a href="sesion/login" class="dropdown-item">Ingresar</a></li> --}}
+      <li><a href="/sesion/intermedio" class="dropdown-item">Inicio</a></li>
+      {{!-- <li><a href="sesion/registro" class="dropdown-item">Crear usuario</a></li> --}}
+      <li><hr class="dropdown-divider"></li>
+      <li><a href="/sesion/logout" class="dropdown-item text-danger">Salir</a></li>
+
+    </ul>
   </div>
-</nav> {{!3:07}}
+  {{/unless}}
+</nav> 
